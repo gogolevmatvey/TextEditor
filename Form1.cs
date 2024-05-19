@@ -29,9 +29,9 @@ namespace TextEditor
             FontFamily[] fontFamilies = installedFontCollection.Families;
             foreach (FontFamily fontFamily in fontFamilies)
             {
-                fontNameCombo.Items.Add(fontFamily.Name);
+                fontNameComboBox.Items.Add(fontFamily.Name);
             }
-            fontNameCombo.SelectedIndex = 18;
+            fontNameComboBox.SelectedIndex = 18;
         }
 
         private void newClick(object sender, EventArgs e)
@@ -99,11 +99,6 @@ namespace TextEditor
         {
             if (fontDialog1.ShowDialog() == DialogResult.OK)
                 richTextBox.SelectionFont = fontDialog1.Font;
-        }
-
-        private void fontNameCombo_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void copyClick(object sender, EventArgs e)
@@ -339,5 +334,28 @@ namespace TextEditor
             richTextBox.SelectionColor = Color.Red;
             return true;
         }
+
+        private void fontNameComboBoxSelectedIndexChanged(object sender, EventArgs e)
+        {
+            int start = richTextBox.SelectionStart;
+            int length = richTextBox.SelectionLength;
+            if (length != 0)
+            {
+                for (int i = 0; i < length; i++)
+                {
+                    richTextBox.Select(start + i, 1);
+                    Font oldfont = richTextBox.SelectionFont;
+                    richTextBox.SelectionFont = new Font(fontNameComboBox.SelectedItem.ToString(), Convert.ToInt32(fontSizeComboBox.SelectedItem), oldfont.Style);
+                }
+                richTextBox.Select(start, length);
+            }
+            else
+            {
+                Font oldfont = richTextBox.SelectionFont;
+                richTextBox.SelectionFont = new Font(fontNameComboBox.SelectedItem.ToString(), Convert.ToInt32(fontSizeComboBox.SelectedItem), oldfont.Style);
+            }
+        }
+
+        private void fontNameComboBoxClick(object sender, EventArgs e) { }
     }
 }

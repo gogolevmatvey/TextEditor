@@ -35,3 +35,13 @@ C:\Users\Matvey\Desktop\TextEditor\obj\Debug\TextEditor.csproj.CoreCompileInputs
 C:\Users\Matvey\Desktop\TextEditor\obj\Debug\TextEditor.exe
 C:\Users\Matvey\Desktop\TextEditor\obj\Debug\TextEditor.pdb
 C:\Users\Matvey\Desktop\TextEditor\obj\Debug\TextEditor.FindForm.resources
+C:\VS Projects\TextEditor\bin\Debug\TextEditor.exe
+C:\VS Projects\TextEditor\bin\Debug\TextEditor.pdb
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.csproj.AssemblyReference.cache
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.FindForm.resources
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.Form1.resources
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.Properties.Resources.resources
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.csproj.GenerateResource.cache
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.csproj.CoreCompileInputs.cache
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.exe
+C:\VS Projects\TextEditor\obj\Debug\TextEditor.pdb
